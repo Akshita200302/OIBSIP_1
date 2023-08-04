@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f3f3f3;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  /* Calculator Container */
+  .container {
+    background: #232323;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 510px;
+  }
+  
+  /* Calculator Input Box */
+  input[type="text"] {
+    border: none;
+    border-radius: 5px;
+    background-color: #303030;
+    color: #fff;
+    width: 99%;
+    height: 80px; /* Increased height for a bigger display */
+    padding: 15px;
+    text-align: right;
+    font-size: 2.5rem; /* Increased font size for better visibility */
+    margin-bottom: 20px;
+  }
+  
+  input::placeholder {
+    color: #888;
+  }
+  
+  /* Buttons Container */
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  /* Common Button Styles */
+  .button {
+    border: none;
+    width: 80px;
+    height: 60px;
+    margin: 5px;
+    border-radius: 5px;
+    background: #454545;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .button:hover {
+    background-color: #606060;
+  }
+  
+  /* Operator Buttons */
+  .op {
+    background: #ff9500;
+  }
+  
+  .op:hover {
+    background: #ffaa00;
+  }
+  
+  /* Equal Button */
+  .equ {
+    background: #4cd963;
+  }
+  
+  .equ:hover {
+    background: #58e170;
+  }
+  
+  /* Clear Button */
+  .clear {
+    background: #ff3b30;
+  }
+  
+  .clear:hover {
+    background: #ff5146;
+  }
+  
